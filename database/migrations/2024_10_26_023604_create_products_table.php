@@ -25,7 +25,7 @@ return new class extends Migration
             $table->foreignIdFor(User::class, 'created_by')->nullable();
             $table->foreignIdFor(User::class, 'updated_by')->nullable();
             $table->foreignIdFor(User::class, 'deleted_by')->nullable();
-            $table->softDelete();
+            $table->softDeletes();
         });
     }
 
